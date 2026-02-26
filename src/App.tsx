@@ -31,10 +31,7 @@ const servicesData = [
     title: "Manutenção",
     desc: "Limpeza profunda e prevenção para máxima eficiência e ar puro.",
     images: [
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=800&auto=format&fit=crop"
+      "/manutencao.webp"
     ]
   },
   {
@@ -42,10 +39,7 @@ const servicesData = [
     title: "Instalação",
     desc: "Instalação nos padrões do fabricante, sem dor de cabeça.",
     images: [
-      "https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+      "/instalacao.webp"
     ]
   },
   {
@@ -53,10 +47,7 @@ const servicesData = [
     title: "Carga de Gás",
     desc: "Diagnóstico de vazamentos e recarga completa com segurança.",
     images: [
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop"
+      "/carga.webp"
     ]
   },
   {
@@ -64,10 +55,7 @@ const servicesData = [
     title: "Reparos",
     desc: "Consertos rápidos para seu equipamento voltar a gelar.",
     images: [
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop"
+      "/reparo.webp"
     ]
   }
 ];
@@ -471,7 +459,7 @@ export default function App() {
             >
               <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/hvac/1280/720" 
+                  src="/sobre.webp" 
                   alt="Instalação de Ar Condicionado Premium" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
