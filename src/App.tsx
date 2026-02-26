@@ -264,7 +264,6 @@ export default function App() {
   </div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-    {/* Reativado o Grid de 2 colunas */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
       <div className="flex flex-col items-start text-left">
@@ -288,16 +287,16 @@ export default function App() {
           para o Seu Conforto.
         </motion.h1>
 
-        {/* Logo Mobile (Aparece apenas em telas pequenas entre o título e botões) */}
+        {/* Logo Mobile - Aumentada e com mais margem para não embolar */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="lg:hidden relative w-full max-w-[200px] mx-auto mb-10"
+          className="lg:hidden relative w-full max-w-[240px] mx-auto mb-14"
         >
           <img 
             src="/logohero.png" 
             alt="Logo Eduardo Climatização" 
-            className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]"
+            className="w-full h-auto object-contain drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]"
           />
         </motion.div>
 
@@ -326,27 +325,28 @@ export default function App() {
         </motion.div>
       </div>
 
-      {/* Logo Desktop (Aparece apenas em telas grandes no lado direito) */}
+      {/* Logo Desktop - Aumentada de 'sm' para 'md' para preencher o vácuo */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="hidden lg:flex justify-center items-center relative"
       >
-        <div className="relative w-full max-w-sm">
+        <div className="relative w-full max-w-md"> 
           <img 
             src="/logohero.png" 
             alt="Logo Eduardo Climatização" 
-            className="w-full h-auto object-contain drop-shadow-[0_0_30px_rgba(0,229,255,0.2)]"
+            className="w-full h-auto object-contain drop-shadow-[0_0_40px_rgba(0,229,255,0.25)]"
           />
-          {/* Brilho decorativo atrás da logo */}
-          <div className="absolute inset-0 bg-brand-cyan/10 rounded-full blur-[100px] -z-10"></div>
+          {/* Brilho expandido para acompanhar o novo tamanho */}
+          <div className="absolute inset-0 bg-brand-cyan/15 rounded-full blur-[120px] -z-10"></div>
         </div>
       </motion.div>
 
     </div>
   </div>
 </section>
+
 
 
 
