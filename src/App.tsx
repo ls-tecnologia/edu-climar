@@ -198,9 +198,9 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            {/* SVG Customizado Futuro */}
+            {/* Logo Eduardo Climatização */}
             <div className="w-10 h-10 flex items-center justify-center">
-              <span className="text-brand-cyan font-bold text-xl tracking-widest">EC</span>
+              <img src="/logoedu.svg" alt="Logo Eduardo Climatização" className="w-full h-full object-contain" />
             </div>
             <span className="font-heading font-bold text-xl tracking-tight">
               Eduardo <span className="text-brand-cyan">Climatização</span>
@@ -256,6 +256,7 @@ export default function App() {
           </motion.div>
         )}
       </header>
+
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-start pt-28 lg:pt-36 pb-12 overflow-hidden">
