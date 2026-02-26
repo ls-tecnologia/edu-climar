@@ -200,7 +200,7 @@ export default function App() {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             {/* Logo Eduardo Climatização */}
             <div className="w-10 h-10 flex items-center justify-center">
-              <img src="/logoedu.svg" alt="Logo Eduardo Climatização" className="w-full h-full object-contain" />
+              <img src="/logoeduc.png" alt="Logo Eduardo Climatização" className="w-full h-full object-contain" />
             </div>
             <span className="font-heading font-bold text-xl tracking-tight">
               Eduardo <span className="text-brand-cyan">Climatização</span>
