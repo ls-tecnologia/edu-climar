@@ -264,7 +264,9 @@ export default function App() {
   </div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+  {/* Removi o grid-cols-2 e adicionei flex centralizado */}
+  <div className="flex flex-col items-center text-center w-full"> 
+
       <div className="max-w-xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
