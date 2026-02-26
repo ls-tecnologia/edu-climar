@@ -635,7 +635,7 @@ export default function App() {
     {/* Logo Eduardo Climatização no Rodapé */}
     <div className="w-10 h-10 flex items-center justify-center">
       <img 
-        src="/logoedu.png" 
+        src="/logoeduc.png" 
         alt="Logo Eduardo Climatização" 
         className="w-full h-full object-contain" 
       />
