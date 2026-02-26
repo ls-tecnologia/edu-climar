@@ -247,122 +247,99 @@ export default function App() {
 
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-start pt-28 lg:pt-36 pb-12 overflow-hidden">
-        {/* Background Image & Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=2070&auto=format&fit=crop" 
-            alt="Ar condicionado moderno" 
-            className="w-full h-full object-cover opacity-20 blur-[2px] scale-105"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/90 via-brand-dark/95 to-brand-dark"></div>
-          
-          {/* Decorative Elements */}
-          <div className="absolute top-1/4 -right-64 w-96 h-96 bg-brand-cyan/20 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-1/4 -left-64 w-96 h-96 bg-brand-cyan-dark/10 rounded-full blur-[120px]"></div>
-        </div>
+<section className="relative min-h-screen flex items-start pt-28 lg:pt-36 pb-12 overflow-hidden">
+  {/* Background Image & Overlay */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="https://images.unsplash.com/photo-1527629856347-97ce23cf5712?q=80&w=2070&auto=format&fit=crop" 
+      alt="Ar condicionado moderno" 
+      className="w-full h-full object-cover opacity-20 blur-[2px] scale-105"
+      referrerPolicy="no-referrer"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/90 via-brand-dark/95 to-brand-dark"></div>
+    
+    {/* Decorative Elements */}
+    <div className="absolute top-1/4 -right-64 w-96 h-96 bg-brand-cyan/20 rounded-full blur-[120px]"></div>
+    <div className="absolute bottom-1/4 -left-64 w-96 h-96 bg-brand-cyan-dark/10 rounded-full blur-[120px]"></div>
+  </div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="max-w-xl">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 bg-transparent border border-white/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm"
-              >
-                <Check className="w-4 h-4 text-brand-cyan" />
-                <span className="text-xs font-semibold tracking-wide uppercase text-white/90">ESPECIALISTA EM REFRIGERAÇÃO</span>
-              </motion.div>
+  <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="max-w-xl">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 bg-transparent border border-white/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm"
+        >
+          <Check className="w-4 h-4 text-brand-cyan" />
+          <span className="text-xs font-semibold tracking-wide uppercase text-white/90">ESPECIALISTA EM REFRIGERAÇÃO</span>
+        </motion.div>
 
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-4xl md:text-5xl font-extrabold leading-[1.2] tracking-tight mb-8"
-              >
-                <span className="text-brand-cyan">O Clima Perfeito</span><br />
-                para o Seu Conforto.
-              </motion.h1>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-4xl md:text-5xl font-extrabold leading-[1.2] tracking-tight mb-8"
+        >
+          <span className="text-brand-cyan">O Clima Perfeito</span><br />
+          para o Seu Conforto.
+        </motion.h1>
 
-              {/* Mobile Image (Visible only on small screens, immediately below H1) */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="relative w-full max-w-sm mx-auto mb-8 lg:hidden"
-              >
-                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
-                    alt="Eduardo Lopes - Técnico Responsável" 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
-                  
-                  <div className="absolute bottom-0 left-0 w-full p-6">
-                    <h3 className="text-xl font-bold text-white mb-1">Eduardo Lopes</h3>
-                    <p className="text-brand-cyan font-medium text-sm">Técnico Responsável</p>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="flex flex-col gap-3 mb-10 lg:mb-0 w-full sm:max-w-md"
-              >
-                <a 
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative inline-flex items-center justify-center gap-2 bg-brand-cyan text-brand-dark px-6 py-3.5 rounded-xl font-bold text-base overflow-hidden transition-all hover:scale-[1.02] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_30px_rgba(0,229,255,0.5)] w-full"
-                >
-                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
-                  <span className="relative z-10">Solicitar Orçamento</span>
-                  <ArrowRight className="w-5 h-5 relative z-10" />
-                </a>
-                
-                <button 
-                  onClick={() => scrollTo('servicos')}
-                  className="inline-flex items-center justify-center bg-brand-card text-white border border-white/10 px-6 py-3.5 rounded-xl font-semibold text-base transition-all hover:bg-brand-card-hover hover:border-brand-cyan/30 w-full"
-                >
-                  Ver Serviços
-                </button>
-              </motion.div>
-            </div>
-
-            {/* Desktop Image (Visible only on lg screens) */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="hidden lg:block relative w-full max-w-md mx-auto lg:ml-auto"
-            >
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
-                  alt="Eduardo Lopes - Técnico Responsável" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
-                
-                <div className="absolute bottom-0 left-0 w-full p-8">
-                  <h3 className="text-2xl font-bold text-white mb-1">Eduardo Lopes</h3>
-                  <p className="text-brand-cyan font-medium">Técnico Responsável</p>
-                </div>
-              </div>
-              
-              {/* Decorative element behind image */}
-              <div className="absolute -inset-4 bg-brand-cyan/20 rounded-[2.5rem] -z-10 blur-xl opacity-50"></div>
-            </motion.div>
+        {/* IMAGEM MOBILE - ESCONDIDA COM 'hidden' */}
+        <motion.div
+          className="hidden relative w-full max-w-sm mx-auto mb-8"
+        >
+          <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
+              alt="Eduardo Lopes" 
+              className="w-full h-full object-cover"
+            />
           </div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-col gap-3 mb-10 lg:mb-0 w-full sm:max-w-md"
+        >
+          <a 
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center gap-2 bg-brand-cyan text-brand-dark px-6 py-3.5 rounded-xl font-bold text-base overflow-hidden transition-all hover:scale-[1.02] shadow-[0_0_20px_rgba(0,229,255,0.3)] hover:shadow-[0_0_30px_rgba(0,229,255,0.5)] w-full"
+          >
+            <span className="relative z-10">Solicitar Orçamento</span>
+            <ArrowRight className="w-5 h-5 relative z-10" />
+          </a>
+          
+          <button 
+            onClick={() => scrollTo('servicos')}
+            className="inline-flex items-center justify-center bg-brand-card text-white border border-white/10 px-6 py-3.5 rounded-xl font-semibold text-base transition-all hover:bg-brand-card-hover hover:border-brand-cyan/30 w-full"
+          >
+            Ver Serviços
+          </button>
+        </motion.div>
+      </div>
+
+      {/* IMAGEM DESKTOP - ESCONDIDA COM 'hidden' */}
+      <motion.div
+        className="hidden relative w-full max-w-md mx-auto lg:ml-auto"
+      >
+        <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
+            alt="Eduardo Lopes" 
+            className="w-full h-full object-cover"
+          />
         </div>
-      </section>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 
       {/* Nossa Essência Section */}
       <section className="py-24 bg-brand-dark relative">
