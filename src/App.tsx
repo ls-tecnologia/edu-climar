@@ -631,19 +631,24 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16 border-t border-white/10 pt-16">
             
             <div className="col-span-1 lg:col-span-1">
-              <div className="flex items-center gap-3 mb-6">
-                {/* SVG Customizado Futuro */}
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <span className="text-brand-cyan font-bold text-xl tracking-widest">EC</span>
-                </div>
-                <span className="font-heading font-bold text-xl tracking-tight">
-                  Eduardo <span className="text-brand-cyan">Climatização</span>
-                </span>
-              </div>
-              <p className="text-brand-muted text-sm leading-relaxed">
-                Excelência em refrigeração e climatização em Recife. Seu conforto é a nossa prioridade.
-              </p>
-            </div>
+  <div className="flex items-center gap-3 mb-6">
+    {/* Logo Eduardo Climatização no Rodapé */}
+    <div className="w-10 h-10 flex items-center justify-center">
+      <img 
+        src="/logoedu.png" 
+        alt="Logo Eduardo Climatização" 
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <span className="font-heading font-bold text-xl tracking-tight">
+      Eduardo <span className="text-brand-cyan">Climatização</span>
+    </span>
+  </div>
+  <p className="text-brand-muted text-sm leading-relaxed">
+    Excelência em refrigeração e climatização em Recife. Seu conforto é a nossa prioridade.
+  </p>
+</div>
+
 
             <div>
               <h4 className="font-bold text-lg mb-6">Contato</h4>
