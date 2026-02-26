@@ -295,7 +295,7 @@ export default function App() {
           className="lg:hidden relative w-full max-w-[200px] mx-auto mb-10"
         >
           <img 
-            src="/logoedu.png" 
+            src="/logoeduc.png" 
             alt="Logo Eduardo Climatização" 
             className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]"
           />
