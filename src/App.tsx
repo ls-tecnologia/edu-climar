@@ -246,8 +246,9 @@ export default function App() {
       </header>
 
 
-      {/* Hero Section */}
-<section className="relative min-h-screen flex items-start pt-28 lg:pt-36 pb-12 overflow-hidden">
+      {/* Hero Section - Ajustada para h-auto para tirar o buraco */}
+<section className="relative h-auto flex items-start pt-20 lg:pt-24 pb-20 overflow-hidden">
+
   {/* Background Image & Overlay */}
   <div className="absolute inset-0 z-0">
     <img 
