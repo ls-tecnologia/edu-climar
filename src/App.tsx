@@ -246,9 +246,8 @@ export default function App() {
       </header>
 
 
-      {/* Hero Section - Ajustada para h-auto para tirar o buraco */}
-<section className="relative h-auto flex items-start pt-20 lg:pt-24 pb-20 overflow-hidden">
-
+      {/* Hero Section */}
+<section className="relative min-h-screen flex items-center pt-20 pb-12 overflow-hidden">
   {/* Background Image & Overlay */}
   <div className="absolute inset-0 z-0">
     <img 
@@ -265,10 +264,10 @@ export default function App() {
   </div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-  {/* Removi o grid-cols-2 e adicionei flex centralizado */}
-  <div className="flex flex-col items-center text-center w-full"> 
-
-      <div className="max-w-xl">
+    {/* Reativado o Grid de 2 colunas */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <div className="flex flex-col items-start text-left">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -289,24 +288,24 @@ export default function App() {
           para o Seu Conforto.
         </motion.h1>
 
-        {/* IMAGEM MOBILE - ESCONDIDA COM 'hidden' */}
+        {/* Logo Mobile (Aparece apenas em telas pequenas entre o título e botões) */}
         <motion.div
-          className="hidden relative w-full max-w-sm mx-auto mb-8"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="lg:hidden relative w-full max-w-[200px] mx-auto mb-10"
         >
-          <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
-              alt="Eduardo Lopes" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <img 
+            src="/logoedu.png" 
+            alt="Logo Eduardo Climatização" 
+            className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]"
+          />
         </motion.div>
 
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col gap-3 mb-10 lg:mb-0 w-full sm:max-w-md"
+          className="flex flex-col gap-3 w-full sm:max-w-md"
         >
           <a 
             href={WHATSAPP_LINK}
@@ -327,21 +326,28 @@ export default function App() {
         </motion.div>
       </div>
 
-      {/* IMAGEM DESKTOP - ESCONDIDA COM 'hidden' */}
+      {/* Logo Desktop (Aparece apenas em telas grandes no lado direito) */}
       <motion.div
-        className="hidden relative w-full max-w-md mx-auto lg:ml-auto"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="hidden lg:flex justify-center items-center relative"
       >
-        <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+        <div className="relative w-full max-w-sm">
           <img 
-            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
-            alt="Eduardo Lopes" 
-            className="w-full h-full object-cover"
+            src="/logoedu.png" 
+            alt="Logo Eduardo Climatização" 
+            className="w-full h-auto object-contain drop-shadow-[0_0_30px_rgba(0,229,255,0.2)]"
           />
+          {/* Brilho decorativo atrás da logo */}
+          <div className="absolute inset-0 bg-brand-cyan/10 rounded-full blur-[100px] -z-10"></div>
         </div>
       </motion.div>
+
     </div>
   </div>
 </section>
+
 
 
       {/* Nossa Essência Section */}
