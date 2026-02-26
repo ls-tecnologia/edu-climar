@@ -541,7 +541,7 @@ export default function App() {
           <div className="mt-12 text-center">
             <p className="text-gray-400 text-lg md:text-xl mb-6">Já é nosso cliente?</p>
             <a 
-              href="#" 
+              href="https://g.page/r/CSp9yYwy7JGiEBM/review" 
               className="inline-flex items-center gap-3 bg-[#1A1A1A] border border-brand-cyan/30 px-6 py-4 rounded-xl shadow-[0_0_15px_rgba(0,229,255,0.15)] hover:shadow-[0_0_25px_rgba(0,229,255,0.4)] hover:border-brand-cyan transition-all duration-300 group"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
