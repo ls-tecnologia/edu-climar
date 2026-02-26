@@ -276,7 +276,7 @@ export default function App() {
           className="inline-flex items-center gap-2 bg-transparent border border-white/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm"
         >
           <Check className="w-4 h-4 text-brand-cyan" />
-          <span className="text-xs font-semibold tracking-wide uppercase text-white/90">ESPECIALISTA EM REFRIGERAÇÃO</span>
+          <span className="text-xs font-semibold tracking-wide uppercase text-white/90">ESPECIALISTA EM CLIMATIZAÇÃO</span>
         </motion.div>
 
         <motion.h1 
