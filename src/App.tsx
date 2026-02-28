@@ -288,7 +288,7 @@ export default function App() {
               >
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
                   <img 
-                    src="/logohero.png" 
+                    src="/eduardo.jpg" 
                     alt="Eduardo Lopes - Técnico Especialista" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -336,7 +336,7 @@ export default function App() {
             >
               <div className="relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(0,229,255,0.15)] group">
                 <img 
-                  src="/logohero.png" 
+                  src="/eduardo.jpg" 
                   alt="Eduardo Lopes - Técnico Especialista" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
